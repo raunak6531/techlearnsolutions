@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechLearn Solutions - Empowering Tech Education</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Navbar -->
+    <header id="navbar" class="gradient-navbar fixed top-0 left-0 w-full z-50 transition-colors duration-300">
+      <nav class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+        <div class="flex items-center gap-2">
+          <img src="logo/logo.png" alt="TechLearn Solutions Logo" class="h-10 w-auto">
+          <span class="navbar-title text-white font-bold text-xl md:text-2xl tracking-tight hidden sm:inline transition-colors duration-300">TechLearn Solutions</span>
+        </div>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="#home" class="navbar-link text-white hover:text-blue-200 transition-colors duration-300">Home</a>
+          <a href="#techprep" class="navbar-link text-white hover:text-blue-200 transition-colors duration-300">TechPrep</a>
+          <a href="#designlab" class="navbar-link text-white hover:text-blue-200 transition-colors duration-300">DesignLab</a>
+          <a href="#internship" class="navbar-link text-white hover:text-blue-200 transition-colors duration-300">Summer Intern</a>
+          <a href="#projects" class="navbar-link text-white hover:text-blue-200 transition-colors duration-300">Mini Projects</a>
+          <a href="#contact" class="navbar-link text-white hover:text-blue-200 transition-colors duration-300">Contact</a>
+        </div>
+        <a href="#home" class="navbar-btn ml-4 px-6 py-2 rounded-lg font-semibold bg-white text-blue-900 hover:bg-blue-100 shadow transition-colors duration-300 hidden md:inline-block">Get Started</a>
+        <button id="mobile-menu-btn" class="md:hidden text-white text-2xl focus:outline-none">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden flex-col bg-blue-950 text-white px-6 py-4 md:hidden">
+        <a href="#home" class="py-2 block">Home</a>
+        <a href="#techprep" class="py-2 block">TechPrep</a>
+        <a href="#designlab" class="py-2 block">DesignLab</a>
+        <a href="#internship" class="py-2 block">Summer Intern</a>
+        <a href="#projects" class="py-2 block">Mini Projects</a>
+        <a href="#contact" class="py-2 block">Contact</a>
+        <a href="#home" class="mt-2 px-6 py-2 rounded-lg font-semibold bg-white text-blue-900 hover:bg-blue-100 shadow transition block text-center">Get Started</a>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative flex items-center min-h-screen bg-gradient-to-br from-[#070054] to-[#0a086b] pt-32 overflow-hidden">
+      <!-- Decorative Circles -->
+      <div class="absolute left-[-10%] top-[30%] w-[500px] h-[500px] bg-blue-200 opacity-20 rounded-full blur-3xl"></div>
+      <div class="absolute right-[-5%] top-[10%] w-[350px] h-[350px] bg-blue-100 opacity-20 rounded-full blur-2xl"></div>
+      <div class="absolute left-[40%] bottom-[10%] w-[220px] h-[220px] bg-blue-100 opacity-10 rounded-full blur-2xl"></div>
+      <div class="relative z-10 flex flex-col md:flex-row items-center w-full max-w-7xl mx-auto px-6 gap-12">
+        <!-- Left: Headline & Buttons -->
+        <div class="flex-1 flex flex-col items-start justify-center">
+          <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-6 drop-shadow-lg">Empowering Tech Careers Through<br class="hidden md:block"> Expert Learning</h1>
+          <p class="text-lg md:text-xl text-blue-100 mb-8 max-w-xl">Comprehensive training programs designed to prepare students and professionals for successful tech careers.</p>
+          <div class="flex gap-4">
+            <a href="#techprep" class="px-6 py-3 rounded-lg font-semibold bg-white text-blue-900 hover:bg-blue-100 shadow transition">Explore Programs</a>
+            <a href="#designlab" class="px-6 py-3 rounded-lg font-semibold border-2 border-white text-white hover:bg-white hover:text-blue-900 transition">Learn More</a>
+          </div>
+        </div>
+        <!-- Right: Code Editor Card -->
+        <div class="flex-1 flex items-center justify-center">
+          <div class="group [perspective:1200px]">
+            <div class="bg-white rounded-2xl shadow-2xl w-[420px] md:w-[600px] transition-transform duration-500 [transform:rotateY(12deg)] group-hover:[transform:rotateY(0deg)]">
+              <div class="flex items-center gap-2 px-5 pt-4 pb-2">
+                <span class="w-3 h-3 rounded-full bg-red-400"></span>
+                <span class="w-3 h-3 rounded-full bg-yellow-300"></span>
+                <span class="w-3 h-3 rounded-full bg-green-400"></span>
+              </div>
+              <pre class="bg-gray-50 text-left text-base md:text-lg font-mono px-5 py-4 rounded-b-xl min-h-[160px] whitespace-pre-wrap break-words">
+<span class="text-purple-600 font-bold">function</span> <span class="text-fuchsia-700 font-bold">learnWithUs</span>() {
+  <span class="text-red-700 font-bold">const</span> <span class="text-blue-700">skills</span> = <span class="text-green-600">["HTML", "CSS", "Js", "React"]</span>;
+  <span class="text-red-700 font-bold">const</span> <span class="text-blue-700">future</span> = <span class="text-green-600">"bright"</span>;
+  <span class="text-purple-600 font-bold">return</span> <span class="text-blue-700">skills</span>.map(<span class="text-blue-700">skill</span> =&gt; {
+    <span class="text-purple-600 font-bold">return</span> <span class="text-green-600">`Master $&#123;skill&#125; for a $&#123;future&#125; career!`</span>;
+  });
+}
+              </pre>
+              <div class="flex items-center justify-between px-5 py-3 text-gray-500 text-sm">
+                <span>TechLearn Code Editor</span>
+                <button class="bg-blue-900 text-white px-4 py-1.5 rounded-md font-semibold shadow hover:bg-blue-700 transition">Run</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TechPrep Section -->
+    <section id="techprep" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-4xl font-extrabold text-blue-950 text-center mb-2">TechPrep</h2>
+        <p class="text-xl text-gray-500 text-center mb-12">Comprehensive placement training to accelerate your career in technology</p>
+        <div class="flex flex-col lg:flex-row gap-12 items-center justify-between">
+          <!-- Left: Features -->
+          <div class="flex-1 min-w-0">
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Transform Your Career Path</h3>
+            <p class="text-gray-600 mb-6">TechPrep delivers a complete training ecosystem designed to transform students into industry-ready professionals. Our proven approach combines technical skill development with essential soft skills training.</p>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-start gap-2"><span class="text-green-500 text-xl mt-1"><i class="fas fa-check-circle"></i></span> Industry-aligned curriculum designed by experts</li>
+              <li class="flex items-start gap-2"><span class="text-green-500 text-xl mt-1"><i class="fas fa-check-circle"></i></span> Hands-on training with real-world projects</li>
+              <li class="flex items-start gap-2"><span class="text-green-500 text-xl mt-1"><i class="fas fa-check-circle"></i></span> Mock interviews with industry professionals</li>
+              <li class="flex items-start gap-2"><span class="text-green-500 text-xl mt-1"><i class="fas fa-check-circle"></i></span> Resume building and profile optimization</li>
+              <li class="flex items-start gap-2"><span class="text-green-500 text-xl mt-1"><i class="fas fa-check-circle"></i></span> Placement assistance with top tech companies</li>
+              <li class="flex items-start gap-2"><span class="text-green-500 text-xl mt-1"><i class="fas fa-check-circle"></i></span> Personalized mentorship throughout your journey</li>
+            </ul>
+            <a href="#" class="inline-block px-8 py-3 rounded-lg bg-blue-950 text-white font-semibold shadow hover:bg-blue-900 transition">Enroll Now</a>
+          </div>
+          <!-- Right: Placement Statistics Card -->
+          <div class="flex-1 min-w-0 flex justify-center">
+            <div class="bg-white rounded-2xl shadow-2xl p-8 w-full max-w-md transform rotate-2 relative transition-transform transition-shadow duration-300 hover:-translate-y-2 hover:shadow-[0_16px_48px_rgba(7,0,84,0.22)]">
+              <div class="bg-gradient-to-r from-[#070054] to-[#0a086b] rounded-lg px-6 py-3 mb-6">
+                <h4 class="text-white text-xl font-bold text-center">Placement Statistics</h4>
+              </div>
+              <div class="space-y-5 mb-6">
+                <div class="flex items-center justify-between mb-1">
+                  <span class="text-gray-800">Placement Rate</span>
+                  <span class="text-blue-950 font-bold">92%</span>
+                </div>
+                <div class="w-full h-3 bg-gray-200 rounded-full mb-2">
+                  <div class="h-3 bg-blue-950 rounded-full" style="width:92%"></div>
+                </div>
+                <div class="flex items-center justify-between mb-1">
+                  <span class="text-gray-800">Average Package</span>
+                  <span class="text-blue-950 font-bold">7.5 LPA</span>
+                </div>
+                <div class="w-full h-3 bg-gray-200 rounded-full mb-2">
+                  <div class="h-3 bg-blue-950 rounded-full" style="width:75%"></div>
+                </div>
+                <div class="flex items-center justify-between mb-1">
+                  <span class="text-gray-800">Top Companies</span>
+                  <span class="text-blue-950 font-bold">45+</span>
+                </div>
+                <div class="w-full h-3 bg-gray-200 rounded-full mb-2">
+                  <div class="h-3 bg-blue-950 rounded-full" style="width:60%"></div>
+                </div>
+                <div class="flex items-center justify-between mb-1">
+                  <span class="text-gray-800">Student Satisfaction</span>
+                  <span class="text-blue-950 font-bold">96%</span>
+                </div>
+                <div class="w-full h-3 bg-gray-200 rounded-full mb-2">
+                  <div class="h-3 bg-blue-950 rounded-full" style="width:96%"></div>
+                </div>
+              </div>
+              <div class="text-center text-gray-500 text-sm pt-2">Join 5000+ successful graduates who transformed their careers with TechPrep</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DesignLab Section -->
+    <section id="designlab" class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-4xl font-extrabold text-blue-950 text-center mb-2">DesignLab Playground</h2>
+        <p class="text-xl text-gray-500 text-center mb-12">Your interactive playground for mastering HTML, CSS, and JavaScript</p>
+        <div class="flex flex-col lg:flex-row gap-12 items-start justify-between">
+          <!-- Left: Code Editor & Preview -->
+          <div class="flex-1 min-w-0 flex flex-col gap-6">
+            <!-- Code Editor Card -->
+            <div class="bg-[#181f2a] rounded-2xl shadow-2xl p-0 overflow-hidden">
+              <div class="flex items-center gap-2 px-5 pt-4 pb-2">
+                <span class="w-3 h-3 rounded-full bg-red-400"></span>
+                <span class="w-3 h-3 rounded-full bg-yellow-300"></span>
+                <span class="w-3 h-3 rounded-full bg-green-400"></span>
+                <span class="ml-4 text-white font-semibold">DesignLab Playground</span>
+              </div>
+              <div class="flex divide-x divide-[#232b3a]">
+                <!-- HTML -->
+                <div class="flex-1 px-4 py-3 text-xs md:text-sm font-mono text-blue-200 whitespace-pre break-words overflow-hidden">
+HTML
+<span class="text-blue-400">&lt;!DOCTYPE html&gt;</span>
+<span class="text-blue-400">&lt;html&gt;</span>
+&lt;head&gt;
+  &lt;title&gt;My Page&lt;/title&gt;
+  &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div class="container"&gt;
+    &lt;h1&gt;Hello World&lt;/h1&gt;
+    &lt;p&gt;Welcome to DesignLab&lt;/p&gt;
+    &lt;button class="btn"&gt;Learn More&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;script src="script.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                </div>
+                <!-- CSS -->
+                <div class="flex-1 px-4 py-3 text-xs md:text-sm font-mono text-yellow-200 whitespace-pre break-words overflow-hidden">
+CSS
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+h1 {
+  color: #070054;
+  margin-bottom: 1rem;
+}
+p {
+  color: #333;
+  line-height: 1.6;
+}
+.btn {
+  background: #070054;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+                </div>
+                <!-- JS -->
+                <div class="flex-1 px-4 py-3 text-xs md:text-sm font-mono text-green-200 whitespace-pre break-words overflow-hidden">
+JS
+document.addEventListener(
+  'DOMContentLoaded',
+  () =&gt; {
+    const btn = document.querySelector('.btn');
+    btn.addEventListener('click', () =&gt; {
+      alert('Welcome to TechLearn Solutions!');
+      document.querySelector('p').style.color = '#d9d9d9';
+    });
+    console.log('Script loaded!');
+  }
+);
+                </div>
+              </div>
+            </div>
+            <!-- Preview Card -->
+            <div class="bg-white rounded-xl shadow p-6">
+              <div class="mb-4">
+                <h4 class="text-xl font-bold text-blue-950 mb-1">Hello World</h4>
+                <p class="text-gray-600">Welcome to DesignLab</p>
+              </div>
+              <a href="javascript:void(0)" class="inline-block px-6 py-2 rounded-lg bg-blue-950 text-white font-semibold shadow hover:bg-blue-900 transition">Learn More</a>
+            </div>
+          </div>
+          <!-- Right: Master Web Development -->
+          <div class="flex-1 min-w-0 flex flex-col gap-8">
+            <div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-2">Master Web Development</h3>
+              <p class="text-gray-600 mb-6">DesignLab provides an interactive environment to learn and practice web development skills. Write, edit, and see your code come to life instantly with our real-time preview feature.</p>
+              <!-- Progress Bars -->
+              <div class="space-y-4 mb-8">
+                <div class="flex items-center justify-between mb-1">
+                  <span class="text-gray-800">HTML</span>
+                  <span class="text-gray-600 text-sm">90%</span>
+                </div>
+                <div class="w-full h-2 bg-gray-200 rounded-full mb-2">
+                  <div class="h-2 bg-red-500 rounded-full" style="width:90%"></div>
+                </div>
+                <div class="flex items-center justify-between mb-1">
+                  <span class="text-gray-800">CSS</span>
+                  <span class="text-gray-600 text-sm">85%</span>
+                </div>
+                <div class="w-full h-2 bg-gray-200 rounded-full mb-2">
+                  <div class="h-2 bg-blue-500 rounded-full" style="width:85%"></div>
+                </div>
+                <div class="flex items-center justify-between mb-1">
+                  <span class="text-gray-800">JavaScript</span>
+                  <span class="text-gray-600 text-sm">80%</span>
+                </div>
+                <div class="w-full h-2 bg-gray-200 rounded-full mb-2">
+                  <div class="h-2 bg-yellow-300 rounded-full" style="width:80%"></div>
+                </div>
+              </div>
+            </div>
+            <!-- Steps -->
+            <div class="space-y-6 mb-8">
+              <div class="flex items-start gap-4">
+                <div class="w-8 h-8 flex items-center justify-center rounded-full bg-blue-950 text-white font-bold">1</div>
+                <div>
+                  <div class="font-semibold text-gray-900">Write Code</div>
+                  <div class="text-gray-500 text-sm">Start coding with our intuitive editor</div>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="w-8 h-8 flex items-center justify-center rounded-full bg-blue-950 text-white font-bold">2</div>
+                <div>
+                  <div class="font-semibold text-gray-900">See Results</div>
+                  <div class="text-gray-500 text-sm">Watch your code come to life instantly</div>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="w-8 h-8 flex items-center justify-center rounded-full bg-blue-950 text-white font-bold">3</div>
+                <div>
+                  <div class="font-semibold text-gray-900">Learn & Improve</div>
+                  <div class="text-gray-500 text-sm">Get feedback and improve your skills</div>
+                </div>
+              </div>
+            </div>
+            <a href="javascript:void(0)" class="inline-block px-8 py-3 rounded-lg bg-blue-950 text-white font-semibold shadow hover:bg-blue-900 transition">Try DesignLab Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Summer Intern Section -->
+    <section id="internship" class="py-20 bg-gradient-to-br from-[#070054] to-[#0a086b]">
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-white text-center mb-2">Summer Internship Program</h2>
+        <p class="text-xl text-center text-white mb-10">Accelerate your career with our intensive summer internship for undergraduates</p>
+        <div class="flex flex-col lg:flex-row gap-12 items-start justify-between">
+          <!-- Left: Program Highlights -->
+          <div class="flex-1 min-w-0 flex justify-center">
+            <div class="bg-white rounded-xl shadow-xl p-10 w-full max-w-xl">
+              <h3 class="text-2xl font-extrabold text-blue-950 mb-6">Program Highlights</h3>
+              <ul class="space-y-6 mb-8">
+                <li>
+                  <span class="font-bold text-blue-950">8-Week Immersive Program</span><br>
+                  <span class="text-gray-500">Comprehensive training in modern technologies</span>
+                </li>
+                <li>
+                  <span class="font-bold text-blue-950">Project-Based Learning</span><br>
+                  <span class="text-gray-500">Build a portfolio with real-world projects</span>
+                </li>
+                <li>
+                  <span class="font-bold text-blue-950">Industry Exposure</span><br>
+                  <span class="text-gray-500">Interact with industry experts and gain insights</span>
+                </li>
+                <li>
+                  <span class="font-bold text-blue-950">Stipend</span><br>
+                  <span class="text-gray-500">Performance-based stipend for outstanding interns</span>
+                </li>
+              </ul>
+              <h4 class="font-bold text-blue-950 mb-3 text-center">Summer 2023 Timeline</h4>
+              <div class="bg-gray-50 rounded-lg p-5 flex flex-col gap-3">
+                <div class="flex items-center gap-4">
+                  <span class="font-bold text-blue-950 w-14 text-right">May</span>
+                  <span class="w-5 h-5 flex items-center justify-center rounded-full border-4 border-blue-950 bg-white"></span>
+                  <span class="text-blue-950 font-medium">Onboarding & Foundation</span>
+                </div>
+                <div class="flex items-center gap-4">
+                  <span class="font-bold text-blue-950 w-14 text-right">June</span>
+                  <span class="w-5 h-5 flex items-center justify-center rounded-full border-4 border-blue-950 bg-white"></span>
+                  <span class="text-blue-950 font-medium">Project Assignment & Development</span>
+                </div>
+                <div class="flex items-center gap-4">
+                  <span class="font-bold text-blue-950 w-14 text-right">July</span>
+                  <span class="w-5 h-5 flex items-center justify-center rounded-full border-4 border-blue-950 bg-white"></span>
+                  <span class="text-blue-950 font-medium">Completion & Presentation</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Right: Why Join Our Internship -->
+          <div class="flex-1 min-w-0 flex justify-center">
+            <div class="bg-[#2d297a]/90 rounded-xl shadow-xl p-10 w-full max-w-xl flex flex-col gap-8">
+              <h3 class="text-2xl font-extrabold text-white mb-6">Why Join Our Internship?</h3>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <div class="bg-[#3a368f]/80 rounded-lg p-5 flex flex-col gap-2">
+                  <span class="text-2xl">🛠️</span>
+                  <span class="font-bold text-white">Hands-on Experience</span>
+                  <span class="text-gray-200 text-sm">Work on real industry projects under expert guidance</span>
+                </div>
+                <div class="bg-[#3a368f]/80 rounded-lg p-5 flex flex-col gap-2">
+                  <span class="text-2xl">🧠</span>
+                  <span class="font-bold text-white">Mentorship</span>
+                  <span class="text-gray-200 text-sm">Learn directly from industry professionals</span>
+                </div>
+                <div class="bg-[#3a368f]/80 rounded-lg p-5 flex flex-col gap-2">
+                  <span class="text-2xl">🏆</span>
+                  <span class="font-bold text-white">Certificate</span>
+                  <span class="text-gray-200 text-sm">Earn a recognized internship completion certificate</span>
+                </div>
+                <div class="bg-[#3a368f]/80 rounded-lg p-5 flex flex-col gap-2">
+                  <span class="text-2xl">🤝</span>
+                  <span class="font-bold text-white">Networking</span>
+                  <span class="text-gray-200 text-sm">Build connections with industry leaders and peers</span>
+                </div>
+              </div>
+              <div class="bg-[#3a368f]/80 rounded-lg p-5">
+                <span class="font-bold text-white block mb-2">Eligibility</span>
+                <ul class="space-y-2 text-white text-sm">
+                  <li class="flex items-center gap-2"><span class="text-green-400">✓</span> Undergraduate students from any branch</li>
+                  <li class="flex items-center gap-2"><span class="text-green-400">✓</span> Basic programming knowledge</li>
+                  <li class="flex items-center gap-2"><span class="text-green-400">✓</span> Passion for technology and innovation</li>
+                  <li class="flex items-center gap-2"><span class="text-green-400">✓</span> Commitment to complete the 8-week program</li>
+                </ul>
+              </div>
+              <button class="w-full mt-2 py-3 rounded-lg bg-white text-blue-950 font-semibold shadow hover:bg-blue-100 transition">Apply for Summer 2023</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mini Projects Section -->
+    <section id="projects" class="py-20 bg-blue-50">
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-blue-950 text-center mb-2">Mini Projects</h2>
+        <p class="text-xl text-center text-gray-600 mb-8">Learn by doing with our curated collection of hands-on projects</p>
+        <!-- Tabs -->
+        <div class="flex justify-center mb-8">
+          <div class="inline-flex rounded-lg bg-gray-100 p-1">
+            <button class="tab-btn px-6 py-2 rounded-md font-semibold text-white bg-blue-950 shadow transition focus:outline-none" data-tab="htmlcss">HTML &amp; CSS</button>
+            <button class="tab-btn px-6 py-2 rounded-md font-semibold text-blue-950 hover:bg-blue-100 transition focus:outline-none" data-tab="javascript">JavaScript</button>
+            <button class="tab-btn px-6 py-2 rounded-md font-semibold text-blue-950 hover:bg-blue-100 transition focus:outline-none" data-tab="reactjs">React.js</button>
+            <button class="tab-btn px-6 py-2 rounded-md font-semibold text-blue-950 hover:bg-blue-100 transition focus:outline-none" data-tab="python">Python</button>
+            <button class="tab-btn px-6 py-2 rounded-md font-semibold text-blue-950 hover:bg-blue-100 transition focus:outline-none" data-tab="java">Java</button>
+          </div>
+        </div>
+        <!-- Tab Panels -->
+        <div id="tab-panels">
+          <!-- HTML & CSS Projects -->
+          <div class="tab-panel grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8" data-tab="htmlcss">
+            <div class="bg-white rounded-2xl shadow-lg flex flex-col items-center transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+              <div class="w-full flex flex-col items-center bg-gradient-to-br from-[#070054] to-[#0a086b] rounded-t-2xl pt-8 pb-4">
+                <span class="text-4xl mb-2">🎨</span>
+                <span class="px-4 py-1 rounded-full bg-[#3a368f] text-white text-xs font-semibold mb-2">Beginner</span>
+              </div>
+              <div class="p-6 w-full flex-1 flex flex-col justify-between">
+                <h3 class="text-lg font-bold text-blue-950 mb-2">Responsive Portfolio</h3>
+                <p class="text-gray-700 mb-4">Build a complete responsive portfolio using HTML &amp; CSS with step-by-step guidance.</p>
+                <a href="javascript:void(0)" class="block w-full border border-blue-100 rounded-lg py-2 text-center font-semibold text-blue-950 hover:bg-blue-50 transition">View Project</a>
+              </div>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg flex flex-col items-center transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+              <div class="w-full flex flex-col items-center bg-gradient-to-br from-[#070054] to-[#0a086b] rounded-t-2xl pt-8 pb-4">
+                <span class="text-4xl mb-2">🎨</span>
+                <span class="px-4 py-1 rounded-full bg-[#3a368f] text-white text-xs font-semibold mb-2">Intermediate</span>
+              </div>
+              <div class="p-6 w-full flex-1 flex flex-col justify-between">
+                <h3 class="text-lg font-bold text-blue-950 mb-2">Landing Page Design</h3>
+                <p class="text-gray-700 mb-4">Build a complete landing page design using HTML &amp; CSS with step-by-step guidance.</p>
+                <a href="javascript:void(0)" class="block w-full border border-blue-100 rounded-lg py-2 text-center font-semibold text-blue-950 hover:bg-blue-50 transition">View Project</a>
+              </div>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg flex flex-col items-center transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+              <div class="w-full flex flex-col items-center bg-gradient-to-br from-[#070054] to-[#0a086b] rounded-t-2xl pt-8 pb-4">
+                <span class="text-4xl mb-2">🎨</span>
+                <span class="px-4 py-1 rounded-full bg-[#3a368f] text-white text-xs font-semibold mb-2">Intermediate</span>
+              </div>
+              <div class="p-6 w-full flex-1 flex flex-col justify-between">
+                <h3 class="text-lg font-bold text-blue-950 mb-2">Interactive Form</h3>
+                <p class="text-gray-700 mb-4">Build a complete interactive form using HTML &amp; CSS with step-by-step guidance.</p>
+                <a href="javascript:void(0)" class="block w-full border border-blue-100 rounded-lg py-2 text-center font-semibold text-blue-950 hover:bg-blue-50 transition">View Project</a>
+              </div>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg flex flex-col items-center transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+              <div class="w-full flex flex-col items-center bg-gradient-to-br from-[#070054] to-[#0a086b] rounded-t-2xl pt-8 pb-4">
+                <span class="text-4xl mb-2">🎨</span>
+                <span class="px-4 py-1 rounded-full bg-[#3a368f] text-white text-xs font-semibold mb-2">Advanced</span>
+              </div>
+              <div class="p-6 w-full flex-1 flex flex-col justify-between">
+                <h3 class="text-lg font-bold text-blue-950 mb-2">CSS Animation Gallery</h3>
+                <p class="text-gray-700 mb-4">Build a complete css animation gallery using HTML &amp; CSS with step-by-step guidance.</p>
+                <a href="javascript:void(0)" class="block w-full border border-blue-100 rounded-lg py-2 text-center font-semibold text-blue-950 hover:bg-blue-50 transition">View Project</a>
+              </div>
+            </div>
+          </div>
+          <!-- JavaScript Projects -->
+          <div class="tab-panel hidden grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8" data-tab="javascript">
+            <div class="bg-white rounded-2xl shadow-lg flex flex-col items-center transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+              <div class="w-full flex flex-col items-center bg-gradient-to-br from-[#070054] to-[#0a086b] rounded-t-2xl pt-8 pb-4">
+                <span class="text-4xl mb-2">⚡</span>
+                <span class="px-4 py-1 rounded-full bg-[#3a368f] text-white text-xs font-semibold mb-2">Beginner</span>
+              </div>
+              <div class="p-6 w-full flex-1 flex flex-col justify-between">
+                <h3 class="text-lg font-bold text-blue-950 mb-2">Todo List App</h3>
+                <p class="text-gray-700 mb-4">Build a complete todo list app using JavaScript with step-by-step guidance.</p>
+                <a href="javascript:void(0)" class="block w-full border border-blue-100 rounded-lg py-2 text-center font-semibold text-blue-950 hover:bg-blue-50 transition">View Project</a>
+              </div>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg flex flex-col items-center transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+              <div class="w-full flex flex-col items-center bg-gradient-to-br from-[#070054] to-[#0a086b] rounded-t-2xl pt-8 pb-4">
+                <span class="text-4xl mb-2">⚡</span>
+                <span class="px-4 py-1 rounded-full bg-[#3a368f] text-white text-xs font-semibold mb-2">Intermediate</span>
+              </div>
+              <div class="p-6 w-full flex-1 flex flex-col justify-between">
+                <h3 class="text-lg font-bold text-blue-950 mb-2">Weather Dashboard</h3>
+                <p class="text-gray-700 mb-4">Build a complete weather dashboard using JavaScript with step-by-step guidance.</p>
+                <a href="javascript:void(0)" class="block w-full border border-blue-100 rounded-lg py-2 text-center font-semibold text-blue-950 hover:bg-blue-50 transition">View Project</a>
+              </div>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg flex flex-col items-center transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+              <div class="w-full flex flex-col items-center bg-gradient-to-br from-[#070054] to-[#0a086b] rounded-t-2xl pt-8 pb-4">
+                <span class="text-4xl mb-2">⚡</span>
+                <span class="px-4 py-1 rounded-full bg-[#3a368f] text-white text-xs font-semibold mb-2">Intermediate</span>
+              </div>
+              <div class="p-6 w-full flex-1 flex flex-col justify-between">
+                <h3 class="text-lg font-bold text-blue-950 mb-2">Quiz Application</h3>
+                <p class="text-gray-700 mb-4">Build a complete quiz application using JavaScript with step-by-step guidance.</p>
+                <a href="javascript:void(0)" class="block w-full border border-blue-100 rounded-lg py-2 text-center font-semibold text-blue-950 hover:bg-blue-50 transition">View Project</a>
+              </div>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg flex flex-col items-center transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+              <div class="w-full flex flex-col items-center bg-gradient-to-br from-[#070054] to-[#0a086b] rounded-t-2xl pt-8 pb-4">
+                <span class="text-4xl mb-2">⚡</span>
+                <span class="px-4 py-1 rounded-full bg-[#3a368f] text-white text-xs font-semibold mb-2">Advanced</span>
+              </div>
+              <div class="p-6 w-full flex-1 flex flex-col justify-between">
+                <h3 class="text-lg font-bold text-blue-950 mb-2">Drag-and-Drop Interface</h3>
+                <p class="text-gray-700 mb-4">Build a complete drag-and-drop interface using JavaScript with step-by-step guidance.</p>
+                <a href="javascript:void(0)" class="block w-full border border-blue-100 rounded-lg py-2 text-center font-semibold text-blue-950 hover:bg-blue-50 transition">View Project</a>
+              </div>
+            </div>
+          </div>
+          <!-- React.js Projects -->
+          <div class="tab-panel hidden grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8" data-tab="reactjs">
+            <div class="bg-white rounded-2xl shadow-lg flex flex-col items-center transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+              <div class="w-full flex flex-col items-center bg-gradient-to-br from-[#070054] to-[#0a086b] rounded-t-2xl pt-8 pb-4">
+                <span class="text-4xl mb-2"><img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' alt='React' class='w-10 h-10'/></span>
+                <span class="px-4 py-1 rounded-full bg-[#3a368f] text-white text-xs font-semibold mb-2">Beginner</span>
+              </div>
+              <div class="p-6 w-full flex-1 flex flex-col justify-between">
+                <h3 class="text-lg font-bold text-blue-950 mb-2">Task Manager</h3>
+                <p class="text-gray-700 mb-4">Build a complete task manager using React.js with step-by-step guidance.</p>
+                <a href="javascript:void(0)" class="block w-full border border-blue-100 rounded-lg py-2 text-center font-semibold text-blue-950 hover:bg-blue-50 transition">View Project</a>
+              </div>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg flex flex-col items-center transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+              <div class="w-full flex flex-col items-center bg-gradient-to-br from-[#070054] to-[#0a086b] rounded-t-2xl pt-8 pb-4">
+                <span class="text-4xl mb-2"><img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' alt='React' class='w-10 h-10'/></span>
+                <span class="px-4 py-1 rounded-full bg-[#3a368f] text-white text-xs font-semibold mb-2">Intermediate</span>
+              </div>
+              <div class="p-6 w-full flex-1 flex flex-col justify-between">
+                <h3 class="text-lg font-bold text-blue-950 mb-2">E-commerce Product Page</h3>
+                <p class="text-gray-700 mb-4">Build a complete e-commerce product page using React.js with step-by-step guidance.</p>
+                <a href="javascript:void(0)" class="block w-full border border-blue-100 rounded-lg py-2 text-center font-semibold text-blue-950 hover:bg-blue-50 transition">View Project</a>
+              </div>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg flex flex-col items-center transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+              <div class="w-full flex flex-col items-center bg-gradient-to-br from-[#070054] to-[#0a086b] rounded-t-2xl pt-8 pb-4">
+                <span class="text-4xl mb-2"><img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' alt='React' class='w-10 h-10'/></span>
+                <span class="px-4 py-1 rounded-full bg-[#3a368f] text-white text-xs font-semibold mb-2">Advanced</span>
+              </div>
+              <div class="p-6 w-full flex-1 flex flex-col justify-between">
+                <h3 class="text-lg font-bold text-blue-950 mb-2">Real-time Chat App</h3>
+                <p class="text-gray-700 mb-4">Build a complete real-time chat app using React.js with step-by-step guidance.</p>
+                <a href="javascript:void(0)" class="block w-full border border-blue-100 rounded-lg py-2 text-center font-semibold text-blue-950 hover:bg-blue-50 transition">View Project</a>
+              </div>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg flex flex-col items-center transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+              <div class="w-full flex flex-col items-center bg-gradient-to-br from-[#070054] to-[#0a086b] rounded-t-2xl pt-8 pb-4">
+                <span class="text-4xl mb-2"><img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' alt='React' class='w-10 h-10'/></span>
+                <span class="px-4 py-1 rounded-full bg-[#3a368f] text-white text-xs font-semibold mb-2">Advanced</span>
+              </div>
+              <div class="p-6 w-full flex-1 flex flex-col justify-between">
+                <h3 class="text-lg font-bold text-blue-950 mb-2">Dashboard with Charts</h3>
+                <p class="text-gray-700 mb-4">Build a complete dashboard with charts using React.js with step-by-step guidance.</p>
+                <a href="javascript:void(0)" class="block w-full border border-blue-100 rounded-lg py-2 text-center font-semibold text-blue-950 hover:bg-blue-50 transition">View Project</a>
+              </div>
+            </div>
+          </div>
+          <!-- Python Projects -->
+          <div class="tab-panel hidden grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8" data-tab="python">
+            <div class="bg-white rounded-2xl shadow-lg flex flex-col items-center transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+              <div class="w-full flex flex-col items-center bg-gradient-to-br from-[#070054] to-[#0a086b] rounded-t-2xl pt-8 pb-4">
+                <span class="text-4xl mb-2"><img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' alt='Python' class='w-10 h-10'/></span>
+                <span class="px-4 py-1 rounded-full bg-[#3a368f] text-white text-xs font-semibold mb-2">Beginner</span>
+              </div>
+              <div class="p-6 w-full flex-1 flex flex-col justify-between">
+                <h3 class="text-lg font-bold text-blue-950 mb-2">File Organizer</h3>
+                <p class="text-gray-700 mb-4">Build a complete file organizer using Python with step-by-step guidance.</p>
+                <a href="javascript:void(0)" class="block w-full border border-blue-100 rounded-lg py-2 text-center font-semibold text-blue-950 hover:bg-blue-50 transition">View Project</a>
+              </div>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg flex flex-col items-center transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+              <div class="w-full flex flex-col items-center bg-gradient-to-br from-[#070054] to-[#0a086b] rounded-t-2xl pt-8 pb-4">
+                <span class="text-4xl mb-2"><img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' alt='Python' class='w-10 h-10'/></span>
+                <span class="px-4 py-1 rounded-full bg-[#3a368f] text-white text-xs font-semibold mb-2">Intermediate</span>
+              </div>
+              <div class="p-6 w-full flex-1 flex flex-col justify-between">
+                <h3 class="text-lg font-bold text-blue-950 mb-2">Web Scraper</h3>
+                <p class="text-gray-700 mb-4">Build a complete web scraper using Python with step-by-step guidance.</p>
+                <a href="javascript:void(0)" class="block w-full border border-blue-100 rounded-lg py-2 text-center font-semibold text-blue-950 hover:bg-blue-50 transition">View Project</a>
+              </div>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg flex flex-col items-center transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+              <div class="w-full flex flex-col items-center bg-gradient-to-br from-[#070054] to-[#0a086b] rounded-t-2xl pt-8 pb-4">
+                <span class="text-4xl mb-2"><img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' alt='Python' class='w-10 h-10'/></span>
+                <span class="px-4 py-1 rounded-full bg-[#3a368f] text-white text-xs font-semibold mb-2">Intermediate</span>
+              </div>
+              <div class="p-6 w-full flex-1 flex flex-col justify-between">
+                <h3 class="text-lg font-bold text-blue-950 mb-2">Data Visualization Tool</h3>
+                <p class="text-gray-700 mb-4">Build a complete data visualization tool using Python with step-by-step guidance.</p>
+                <a href="javascript:void(0)" class="block w-full border border-blue-100 rounded-lg py-2 text-center font-semibold text-blue-950 hover:bg-blue-50 transition">View Project</a>
+              </div>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg flex flex-col items-center transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+              <div class="w-full flex flex-col items-center bg-gradient-to-br from-[#070054] to-[#0a086b] rounded-t-2xl pt-8 pb-4">
+                <span class="text-4xl mb-2"><img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' alt='Python' class='w-10 h-10'/></span>
+                <span class="px-4 py-1 rounded-full bg-[#3a368f] text-white text-xs font-semibold mb-2">Advanced</span>
+              </div>
+              <div class="p-6 w-full flex-1 flex flex-col justify-between">
+                <h3 class="text-lg font-bold text-blue-950 mb-2">ML Image Classifier</h3>
+                <p class="text-gray-700 mb-4">Build a complete ml image classifier using Python with step-by-step guidance.</p>
+                <a href="javascript:void(0)" class="block w-full border border-blue-100 rounded-lg py-2 text-center font-semibold text-blue-950 hover:bg-blue-50 transition">View Project</a>
+              </div>
+            </div>
+          </div>
+          <!-- Java Projects -->
+          <div class="tab-panel hidden grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8" data-tab="java">
+            <div class="bg-white rounded-2xl shadow-lg flex flex-col items-center transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+              <div class="w-full flex flex-col items-center bg-gradient-to-br from-[#070054] to-[#0a086b] rounded-t-2xl pt-8 pb-4">
+                <span class="text-4xl mb-2"><img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg' alt='Java' class='w-10 h-10'/></span>
+                <span class="px-4 py-1 rounded-full bg-[#3a368f] text-white text-xs font-semibold mb-2">Beginner</span>
+              </div>
+              <div class="p-6 w-full flex-1 flex flex-col justify-between">
+                <h3 class="text-lg font-bold text-blue-950 mb-2">Student Management System</h3>
+                <p class="text-gray-700 mb-4">Build a complete student management system using Java with step-by-step guidance.</p>
+                <a href="javascript:void(0)" class="block w-full border border-blue-100 rounded-lg py-2 text-center font-semibold text-blue-950 hover:bg-blue-50 transition">View Project</a>
+              </div>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg flex flex-col items-center transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+              <div class="w-full flex flex-col items-center bg-gradient-to-br from-[#070054] to-[#0a086b] rounded-t-2xl pt-8 pb-4">
+                <span class="text-4xl mb-2"><img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg' alt='Java' class='w-10 h-10'/></span>
+                <span class="px-4 py-1 rounded-full bg-[#3a368f] text-white text-xs font-semibold mb-2">Intermediate</span>
+              </div>
+              <div class="p-6 w-full flex-1 flex flex-col justify-between">
+                <h3 class="text-lg font-bold text-blue-950 mb-2">Banking Application</h3>
+                <p class="text-gray-700 mb-4">Build a complete banking application using Java with step-by-step guidance.</p>
+                <a href="javascript:void(0)" class="block w-full border border-blue-100 rounded-lg py-2 text-center font-semibold text-blue-950 hover:bg-blue-50 transition">View Project</a>
+              </div>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg flex flex-col items-center transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+              <div class="w-full flex flex-col items-center bg-gradient-to-br from-[#070054] to-[#0a086b] rounded-t-2xl pt-8 pb-4">
+                <span class="text-4xl mb-2"><img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg' alt='Java' class='w-10 h-10'/></span>
+                <span class="px-4 py-1 rounded-full bg-[#3a368f] text-white text-xs font-semibold mb-2">Intermediate</span>
+              </div>
+              <div class="p-6 w-full flex-1 flex flex-col justify-between">
+                <h3 class="text-lg font-bold text-blue-950 mb-2">Library Management System</h3>
+                <p class="text-gray-700 mb-4">Build a complete library management system using Java with step-by-step guidance.</p>
+                <a href="javascript:void(0)" class="block w-full border border-blue-100 rounded-lg py-2 text-center font-semibold text-blue-950 hover:bg-blue-50 transition">View Project</a>
+              </div>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg flex flex-col items-center transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+              <div class="w-full flex flex-col items-center bg-gradient-to-br from-[#070054] to-[#0a086b] rounded-t-2xl pt-8 pb-4">
+                <span class="text-4xl mb-2"><img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg' alt='Java' class='w-10 h-10'/></span>
+                <span class="px-4 py-1 rounded-full bg-[#3a368f] text-white text-xs font-semibold mb-2">Advanced</span>
+              </div>
+              <div class="p-6 w-full flex-1 flex flex-col justify-between">
+                <h3 class="text-lg font-bold text-blue-950 mb-2">Multi-threaded Server</h3>
+                <p class="text-gray-700 mb-4">Build a complete multi-threaded server using Java with step-by-step guidance.</p>
+                <a href="javascript:void(0)" class="block w-full border border-blue-100 rounded-lg py-2 text-center font-semibold text-blue-950 hover:bg-blue-50 transition">View Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Explore All Button -->
+        <div class="flex justify-center mt-10">
+          <button id="explore-all-btn" class="px-8 py-3 rounded-lg bg-blue-950 text-white font-semibold shadow hover:bg-blue-900 transition">Explore All HTML &amp; CSS Projects</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Available Banner -->
+    <div class="max-w-7xl mx-auto px-4 mb-12">
+      <div class="bg-gray-100 rounded-2xl flex flex-col md:flex-row justify-between items-center py-12 px-6 md:px-16 gap-8">
+        <div class="flex-1 flex flex-col items-center">
+          <span class="text-4xl md:text-5xl font-extrabold text-blue-950 mb-2">100+</span>
+          <span class="text-lg text-gray-600">Projects Available</span>
+        </div>
+        <div class="flex-1 flex flex-col items-center">
+          <span class="text-4xl md:text-5xl font-extrabold text-blue-950 mb-2">5</span>
+          <span class="text-lg text-gray-600">Technology Tracks</span>
+        </div>
+        <div class="flex-1 flex flex-col items-center">
+          <span class="text-4xl md:text-5xl font-extrabold text-blue-950 mb-2">24/7</span>
+          <span class="text-lg text-gray-600">Support</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="bg-[#070054] text-white pt-16 pb-8">
+      <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12 mb-8">
+        <!-- Left: Logo & About -->
+        <div>
+          <div class="flex items-center mb-4">
+            <img src="logo/logo.png" alt="TechLearn Solutions Logo" class="h-10 mr-2">
+            <span class="text-2xl font-bold">TechLearn Solutions</span>
+          </div>
+          <p class="mb-6 text-gray-200">Empowering students and professionals with the skills and knowledge needed to excel in the technology industry through expert-led training programs.</p>
+          <div class="flex gap-4">
+            <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-blue-900 hover:bg-blue-800 transition"><i class="fab fa-facebook-f text-xl"></i></a>
+            <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-blue-900 hover:bg-blue-800 transition"><i class="fab fa-twitter text-xl"></i></a>
+            <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-blue-900 hover:bg-blue-800 transition"><i class="fab fa-instagram text-xl"></i></a>
+            <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-blue-900 hover:bg-blue-800 transition"><i class="fab fa-linkedin-in text-xl"></i></a>
+          </div>
+        </div>
+        <!-- Center: Quick Links -->
+        <div>
+          <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="#home" class="hover:text-blue-200">Home</a></li>
+            <li><a href="#techprep" class="hover:text-blue-200">TechPrep</a></li>
+            <li><a href="#designlab" class="hover:text-blue-200">DesignLab</a></li>
+            <li><a href="#internship" class="hover:text-blue-200">Summer Internship</a></li>
+            <li><a href="#projects" class="hover:text-blue-200">Mini Projects</a></li>
+          </ul>
+        </div>
+        <!-- Right: Contact & Newsletter -->
+        <div id="contact">
+          <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+          <ul class="mb-6 space-y-2 text-gray-200">
+            <li class="flex items-center gap-2"><i class="fas fa-envelope text-blue-200"></i> techlearnsolutions@gmail.com</li>
+            <li class="flex items-center gap-2"><i class="fas fa-phone text-pink-300"></i> +91 98765 43210</li>
+            <li class="flex items-center gap-2"><i class="fas fa-map-marker-alt text-pink-400"></i> TechLearn Campus, Bangalore, India - 560001</li>
+          </ul>
+          <h3 class="text-lg font-semibold mb-2">Subscribe to Our Newsletter</h3>
+          <form class="flex rounded-lg overflow-hidden bg-white">
+            <input type="email" placeholder="Your email" class="px-4 py-2 text-blue-950 flex-1 focus:outline-none" />
+            <button type="submit" class="bg-blue-900 text-white px-6 py-2 font-semibold">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="border-t border-blue-900 pt-6 mt-8 flex flex-col md:flex-row items-center justify-between text-blue-200 text-sm">
+        <div class="mb-2 md:mb-0">© 2025 TechLearn Solutions. All rights reserved.</div>
+        <div class="flex gap-6">
+          <a href="#" class="hover:text-white">Privacy Policy</a>
+          <a href="#" class="hover:text-white">Terms of Service</a>
+          <a href="#" class="hover:text-white">Cookie Policy</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 10) {
+        navbar.classList.remove('gradient-navbar');
+        navbar.classList.add('scrolled-navbar');
+      } else {
+        navbar.classList.add('gradient-navbar');
+        navbar.classList.remove('scrolled-navbar');
+      }
+    });
+    </script>
+</body>
+</html> 
