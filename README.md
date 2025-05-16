@@ -1,47 +1,44 @@
-# TechLearn Solutions Landing Page
+# TechLearn Solutions - Frontend Landing Page
 
-A modern, responsive landing page for TechLearn Solutions showcasing their services and offerings.
+A visually appealing, fully responsive landing page for TechLearn Solutions, built as part of the Front-End Developer assessment.
 
-## Features
+## 🚀 Features
+- Pixel-perfect match to provided reference designs
+- Responsive layout for desktop, tablet, and mobile
+- Animated navbar with gradient-to-white scroll effect
+- Interactive sections: TechPrep, DesignLab Playground, Summer Internship, Mini Projects
+- Tabbed project gallery with filterable cards
+- Custom code editor and preview UI
+- Modern footer with contact info, newsletter, and social links
+- Built with HTML, Tailwind CSS, and JavaScript (no frameworks)
 
-- Responsive design that works on all devices
-- Modern UI with smooth animations and transitions
-- Interactive elements using vanilla JavaScript
-- Sections for TechPrep, DesignLab, Summer Intern, and Mini Projects
-- Optimized performance and accessibility
-
-## Setup Instructions
-
-1. Clone this repository or download the ZIP file
-2. Open `index.html` in your web browser
-3. No build process or dependencies required - it's pure HTML, CSS, and JavaScript
-
-## Project Structure
-
-```
-├── index.html          # Main landing page
-├── styles.css          # Styling
-├── script.js           # Interactive elements
-├── assets/            # Images and other assets
-└── README.md          # This file
-```
-
-## Color Palette
-
-- Primary: #070054 (deep blue)
-- Accent: #d9d9d9 (light grey)
-- Background/Text: Black & White
-
-## Technologies Used
-
+## 🛠️ Tech Stack
 - HTML5
-- CSS3
+- Tailwind CSS (via CDN)
 - JavaScript (ES6+)
-- No external dependencies or frameworks
 
-## Browser Support
+## 📦 Setup Instructions
+1. **Clone or download** this repository (or extract the provided ZIP).
+2. **Open** `index.html` in your web browser.
+   - No build tools or server required.
+   - All assets are local or CDN-hosted.
 
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest) 
+## 📸 Screen Recording
+[Add your Loom/OBS/other screen recording link here, or attach the video to your submission email.]
+
+## 📁 Submission Checklist
+- [x] All required sections and effects implemented
+- [x] README.md with setup instructions
+- [x] Screen recording included
+
+## 📬 Submission Instructions
+Send your GitHub repo link or ZIP, along with this README and your screen recording, as a new email (not a reply) to:
+
+```
+techlearnsolutions@gmail.com
+Subject: Frontend Round 1 Submission – [Your Name]
+```
+
+---
+
+**Thank you for reviewing my submission!** 
