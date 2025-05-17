@@ -15,6 +15,10 @@ A visually appealing, fully responsive landing page for TechLearn Solutions, bui
 - HTML5
 - Tailwind CSS (via CDN)
 - JavaScript (ES6+)
+## Screen Recording - 
+
+https://github.com/user-attachments/assets/23256c25-4232-4fcd-9b66-dd3cebcb51c6
+
 
 ## 📦 Setup Instructions
 1. **Clone or download** this repository (or extract the provided ZIP).
